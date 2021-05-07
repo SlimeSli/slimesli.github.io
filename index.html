@@ -1,214 +1,26 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+
+
 <head>
-<meta charset="UTF-8">
-<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-<meta name="apple-mobile-web-app-title" content="CodePen">
-<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<title>CodePen - Product Landing Page</title>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Baloo Bhai&display=swap');
-
-.milk {
-  background: 
-    -webkit-linear-gradient(45deg,#eacda3 ,#f7bb89);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0px;
-}
-
-body {
-  margin: 0;
-  background-color: #222B;
-  padding:0px 4px;
-}
-header, .content ,footer {
-  display: flex;
-  background-color: #222F;
-  height: 40px;
-  padding: 8px;
-  padding-top:12px;
-  max-width: 900px;
-  margin: 0 auto;
-  align-items: center;
-  border-radius: 0 0 10px 10px;
-  border-bottom: 2px #AAAE solid;
-}
-header {
-  position: fixed;
-  z-index:10;
-  top: 0px;
-  left: 4px;
-  right: 4px;
-}
-#header-img {
-  height: 100%;
-}
-#logo-label {
-  margin-left: 8px;
-  font-size: 45px;
-  font-family: "Nunito";
-  font-weight: bold;
-/*   background: -webkit-linear-gradient(45deg,#cc2b5e,#753a88);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  margin-right: auto;
-}
-nav {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-a {
-  text-decoration: none;
-  background: 
-    -webkit-linear-gradient(45deg,#eacda3 ,#f7bb89);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font: 30px "Baloo Bhai";
-  margin-left: 20px;
-}
-.content {
-  margin-top: 80px;
-  height: 100%;
-  border-radius: 10px;
-  display: block;
-}
-h1 {
-  font: 49px "Nunito";
-  text-align: center;
-  margin 0px;
-}
-form {
-  text-align: center;
-}
-label {
-  font: 20px "Nunito";
-  vertical-align: middle;
-}
-input, button {
-  padding:8px;
-  border-radius: 8px;
-  background: #DDDF;
-  border: 0px;
-  border-bottom: 2px #888F solid;
-  margin-left: auto;
-}
-iframe {
-  display: block;
-  width: 100%;
-  height: 50vw;
-  max-height: 390px;
-  margin: 0 auto;
-  margin-top: 20px;
-  max-width: 700px;
-  border-radius: 8px;
-  border: 0px;
-  box-shadow: 0px 0px 30px #7779, 0px 0px 6px #7779;
-}
-@media (max-width: 700px){
-  h1 {
-    font-size: 7vw;
-  }
-  iframe {
-    height: 50vw;
-  }
-  a{
-    font-size: 4vw;
-  }
-  #logo-label {
-    font-size: 6vw;
-  }
-}
-.pictures {
-  margin-top:40px;
-  display: grid;
-  min-height:900px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-rows: repeat(8,200px);
-  grid-gap: 10px;
-}
-@media (min-width:450px) {
-  .pictures {
-    grid-template-rows: repeat(3,200px);
-  }
-}
-@media (min-width:900px) {
-  .pictures {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: repeat(4,400px);
-  }
-}
-
-.img-div {
-  overflow: hidden;
-  position: relative;
-  border-radius:10px;
-  text-align: center;
-}
-div img {
-  height: 100%;
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-  right: -9999px;
-  bottom: -9999px;
-  margin: auto;
-}
-
-footer{
-  margin-top: 20px;
-  border-radius: 8px 8px 0px 0px;
-  border-top: 2px #888F solid;
-}
-footer a {
-  margin: auto;
-}
-</style>
+    <title>Project1</title>
+    <style>html,
+        body,
+        canvas {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }</style>
 </head>
-<body translate="no">
-<head>
-<title>SlimeSli</title>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-</head>
+
+
+
 <body>
-<header id="header">
-<img id="header-img" alt="header image" src="https://image.flaticon.com/icons/svg/2325/2325507.svg">
-<nav id="nav-bar">
-<label id="logo-label" class="milk">SlimeSli</label>
-<a class="nav-link" href="#video">Videos</a>
- <a class="nav-link" href="#pictures">Pictures</a>
-<a class="nav-link" href="#footer">Info</a>
-</nav>
-</header>
-<div class="content">
-<h1 class="milk">Kittens Pictures & Videos</h1>
-<form id="form" action="https://www.freecodecamp.com/email-submit">
-<label class="milk" for="email">
-Subscribe</label>
-<input type="email" id="email" name="email" placeholder="your@email" target="_blank" required>
-<input id="submit" type="submit" value="Submit"></input>
-</form>
-<iframe id="video" src="https://www.youtube.com/embed/SB-qEYVdvXA"></iframe>
-<div class="pictures" id="pictures">
-<div class=img-div><img src="https://s3.amazonaws.com/petcentral.com/wp-content/uploads/2016/05/16103405/kittens-in-litter-how-many-940x503.jpg"></div>
-<div class=img-div><img src="https://umnaja.ru/wp-content/uploads/2019/06/cats-animals-kittens-background.jpg"></div>
-<div class=img-div><img src="https://e3.365dm.com/19/04/768x432/skynews-kitten-cat_4627790.jpg?20190403095801"></div>
-<div class=img-div><img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_1001,w_1500,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/Kitten_murder_Jeff_Merkley_2_copy_hdpoxd.jpg"></div>
-<div class=img-div><img src="https://static3.depositphotos.com/1007429/238/i/950/depositphotos_2380593-stock-photo-kittens.jpg"></div>
-<div class=img-div><img src="https://img5.goodfon.ru/wallpaper/nbig/3/6a/leto-trava-priroda-razmytie-malenkie-kotiata-progulka-maly-2.jpg"></div>
-<div class=img-div><img src="https://cdn.royalcanin-weshare-online.io/aGkhPmYBG95Xk-RBGt0V/v1/ec12h-5-key-milestones-in-your-kittens-growth-hero-cat"></div>
-<div class=img-div><img src="https://icatcare.org/app/uploads/2018/07/Finding-homes-for-your-kittens-1.png"></div>
-</div>
-</div>
-<footer id="footer">
-<a class="nav-link" target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a>
-<a class="nav-link" target="_blank" href="https://codepen.io/slimesli/pen/qBEYMwz">Tribute Page</a>
-<a class="nav-link" target="_blank" href="https://codepen.io/slimesli/pen/wvBjRvB">Survey Form</a>
-</footer>
+    <canvas id="renderCanvas"></canvas>
+    <script src="index.js"></script>
 </body>
-</body>
+
+
+
 </html>
